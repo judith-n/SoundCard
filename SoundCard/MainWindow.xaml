@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SoundCard"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="428.947" Width="525"
+        Loaded="Window_Loaded">
     <Grid>
-        
+        <Button x:Name="PlaySound" Content="Play Sound" HorizontalAlignment="Left" Height="27" Margin="359,10,0,0" VerticalAlignment="Top" Width="97" Click="PlaySound_Click"/>
+        <TextBlock x:Name="hContent" HorizontalAlignment="Left" Height="195" Margin="10,65,0,0" TextWrapping="Wrap" Text="Header:" VerticalAlignment="Top" Width="204"/>
+        <Button x:Name="HeaderButton" Content="Get WAV header" HorizontalAlignment="Left" Height="27" Margin="10,23,0,0" VerticalAlignment="Top" Width="192" Click="HeaderButton_Click"/>
+        <Grid Name="ActiveXPlayer" HorizontalAlignment="Left" Height="124" Margin="10,265,0,0" VerticalAlignment="Top" Width="192"/>
+        <Button x:Name="ActiveXButton" Content="Play ActiveX" HorizontalAlignment="Left" Height="27" Margin="359,42,0,0" VerticalAlignment="Top" Width="97" Click="ActiveXButton_Click"/>
+        <Button x:Name="DirectSoundButton" Content="Play DirectSound" HorizontalAlignment="Left" Height="27" Margin="359,74,0,0" VerticalAlignment="Top" Width="97" Click="DirectSoundButton_Click"/>
+        <Button x:Name="WaveOutButton" Content="Play WaveOut" HorizontalAlignment="Left" Height="27" Margin="359,106,0,0" VerticalAlignment="Top" Width="97" Click="WaveOutButton_Click"/>
+        <Button x:Name="RecordButton" Content="Record Sound" HorizontalAlignment="Left" Height="27" Margin="359,152,0,0" VerticalAlignment="Top" Width="97" Click="RecordButton_Click"/>
+
     </Grid>
 </Window>
